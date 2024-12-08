@@ -2,7 +2,9 @@ package com.example.school;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
+@EnableFeignClients(basePackages = "com.example.school.client") // Adjust package path
 @SpringBootApplication
 public class SchoolApplication {
 
